@@ -21,6 +21,11 @@
 #
 # Contributor(s):
 #
+# 
+# The original script was hosted on http://sourceforge.net/projects/autodl-irssi/files/autodl-setup/download
+# However the SVNs are dead and no longer working properly
+# So I decided to fix the URLs and upload it in here
+#
 # ***** END LICENSE BLOCK *****
 
 AUTODL_IRSSI_ZIP_URL="http://sourceforge.net/projects/autodl-irssi/files/autodl-irssi-v1.31.zip/download"

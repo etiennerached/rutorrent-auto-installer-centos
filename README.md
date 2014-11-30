@@ -12,3 +12,12 @@ So I decided to fix the urls and add it in here.
 How to run and install instructions:
 http://www.tech-and-dev.com/2013/04/installing-rutorrent-on-centos-and-debian.html
 
+===============================
+
+Note for CentOS 7:
+==================
+Apache and mod_scgi does not work well on CentOS 7 yet. If you are on CentOS 7 You should choose nginx while installing.
+And make sure to allow the http/https ports in the firewal:
+sudo firewall-cmd --permanent --zone=public --add-service=http 
+sudo firewall-cmd --permanent --zone=public --add-service=https
+sudo firewall-cmd --reload

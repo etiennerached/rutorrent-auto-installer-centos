@@ -37,12 +37,11 @@ WEBMIN_URL="http://www.webmin.com/download/webmin-current.tar.gz"
 RUTORRENT_TRUNK_DIR="https://rutorrent.googlecode.com/svn/trunk"
 
 # The official tarballs are tried if subversion fails.
-# bumped version
-RUTORRENT_VERSION="3.7"
-RUTORRENT_CORE_NAME="$RUTORRENT_VERSION.tar.gz"
-#RUTORRENT_PLUGINS_NAME="plugins-$RUTORRENT_VERSION.tar.gz"
-RUTORRENT_CORE_URL="https://bintray.com/novik65/generic/ruTorrent/$RUTORRENT_CORE_NAME"
-#RUTORRENT_PLUGINS_URL="http://dl.bintray.com/novik65/generic/$RUTORRENT_PLUGINS_NAME"
+RUTORRENT_VERSION="3.6"
+RUTORRENT_CORE_NAME="rutorrent-$RUTORRENT_VERSION.tar.gz"
+RUTORRENT_PLUGINS_NAME="plugins-$RUTORRENT_VERSION.tar.gz"
+RUTORRENT_CORE_URL="https://dl.bintray.com/novik65/generic/$RUTORRENT_CORE_NAME"
+RUTORRENT_PLUGINS_URL="http://dl.bintray.com/novik65/generic/$RUTORRENT_PLUGINS_NAME"
 #RUTORRENT_CORE_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/$RUTORRENT_CORE_NAME/download"
 #RUTORRENT_PLUGINS_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/$RUTORRENT_PLUGINS_NAME/download"
 
@@ -140,6 +139,7 @@ IGNORE_IRSSI=n
 # Start port. When we need a new port number, this port is incremented by one.
 CURRENT_PORT=23875
 DEFAULT_PORT_FTP=21
+
 DEFAULT_PORT_FTPES=990
 DEFAULT_UMASK=022
 RPC_PREFIX=RPC

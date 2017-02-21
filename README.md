@@ -24,6 +24,10 @@ sudo firewall-cmd --permanent --zone=public --add-service=http
 
 sudo firewall-cmd --permanent --zone=public --add-service=https
 
+sudo firewall-cmd --permanent --zone=public --add-port=80/tcp
+
+sudo firewall-cmd --permanent --zone=public --add-port=443/tcp
+
 sudo firewall-cmd --reload
 
 ===============================

@@ -28,7 +28,8 @@
 #
 # ***** END LICENSE BLOCK *****
 
-AUTODL_IRSSI_ZIP_URL="http://sourceforge.net/projects/autodl-irssi/files/autodl-irssi-v1.31.zip/download"
+# changing to the community fork of autodl-irssi (http://autodl-community.com/)
+AUTODL_IRSSI_ZIP_URL="https://github.com/autodl-community/autodl-irssi/archive/master.zip"
 SVN_PATH_RUTORRENT_PLUGIN="https://svn.code.sf.net/p/autodl-irssi/code/trunk/rutorrent/autodl-irssi"
 
 WEBMIN_URL="http://www.webmin.com/download/webmin-current.tar.gz"
@@ -36,16 +37,13 @@ WEBMIN_URL="http://www.webmin.com/download/webmin-current.tar.gz"
 RUTORRENT_TRUNK_DIR="https://rutorrent.googlecode.com/svn/trunk"
 
 # The official tarballs are tried if subversion fails.
-#RUTORRENT_VERSION="3.3"
 RUTORRENT_VERSION="3.6"
 RUTORRENT_CORE_NAME="rutorrent-$RUTORRENT_VERSION.tar.gz"
 RUTORRENT_PLUGINS_NAME="plugins-$RUTORRENT_VERSION.tar.gz"
-#RUTORRENT_CORE_URL="http://rutorrent.googlecode.com/files/$RUTORRENT_CORE_NAME"
-#RUTORRENT_PLUGINS_URL="http://rutorrent.googlecode.com/files/$RUTORRENT_PLUGINS_NAME"
-RUTORRENT_CORE_URL="http://dl.bintray.com/novik65/generic/$RUTORRENT_CORE_NAME"
+RUTORRENT_CORE_URL="https://dl.bintray.com/novik65/generic/$RUTORRENT_CORE_NAME"
 RUTORRENT_PLUGINS_URL="http://dl.bintray.com/novik65/generic/$RUTORRENT_PLUGINS_NAME"
-RUTORRENT_CORE_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/$RUTORRENT_CORE_NAME/download"
-RUTORRENT_PLUGINS_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/$RUTORRENT_PLUGINS_NAME/download"
+#RUTORRENT_CORE_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/$RUTORRENT_CORE_NAME/download"
+#RUTORRENT_PLUGINS_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/$RUTORRENT_PLUGINS_NAME/download"
 
 RUTORRENT_PLUGINS=
 
@@ -81,7 +79,7 @@ RUTORRENT_PLUGINS="$RUTORRENT_PLUGINS retrackers"
 #RUTORRENT_PLUGINS="$RUTORRENT_PLUGINS rpc"
 RUTORRENT_PLUGINS="$RUTORRENT_PLUGINS rss"
 RUTORRENT_PLUGINS="$RUTORRENT_PLUGINS rssurlrewrite"
-#RUTORRENT_PLUGINS="$RUTORRENT_PLUGINS rutracker_check"
+RUTORRENT_PLUGINS="$RUTORRENT_PLUGINS rutracker_check"
 RUTORRENT_PLUGINS="$RUTORRENT_PLUGINS scheduler"
 #RUTORRENT_PLUGINS="$RUTORRENT_PLUGINS screenshots"
 RUTORRENT_PLUGINS="$RUTORRENT_PLUGINS seedingtime"
@@ -99,25 +97,28 @@ LIBCURL_URL="http://curl.haxx.se/download/$LIBCURL_NAME.tar.gz"
 SIGCPP20_NAME="libsigc++-2.4.0"
 SIGCPP20_URL="http://ftp.gnome.org/pub/GNOME/sources/libsigc++/2.4/$SIGCPP20_NAME.tar.gz"
 XMLRPC_SVN_DIR="https://svn.code.sf.net/p/xmlrpc-c/code/stable"
-LIBTORRENT_VERSION="0.13.4"
+LIBTORRENT_VERSION="0.13.6"
 LIBTORRENT_NAME="libtorrent-$LIBTORRENT_VERSION"
-LIBTORRENT_URL="http://libtorrent.rakshasa.no/downloads/$LIBTORRENT_NAME.tar.gz"
-LIBTORRENT_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/$LIBTORRENT_NAME.tar.gz/download"
-RTORRENT_VERSION="0.9.4"
+LIBTORRENT_URL="http://rtorrent.net/downloads/$LIBTORRENT_NAME.tar.gz"
+LIBTORRENT_URL2="https://github.com/arvidn/libtorrent/archive/$LIBTORRENT_NAME.tar.gz"
+# bumped rtorrent to most recent stable
+RTORRENT_VERSION="0.9.6"
 RTORRENT_NAME="rtorrent-$RTORRENT_VERSION"
-RTORRENT_URL="http://libtorrent.rakshasa.no/downloads/$RTORRENT_NAME.tar.gz"
-RTORRENT_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/$RTORRENT_NAME.tar.gz/download"
+RTORRENT_URL="http://rtorrent.net/downloads/$RTORRENT_NAME.tar.gz"
+#RTORRENT_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/$RTORRENT_NAME.tar.gz/download"
 
 HTPASSWD_PY_SCRIPT_URL="http://trac.edgewall.org/export/10433/trunk/contrib/htpasswd.py"
 HTPASSWD_PY_SCRIPT_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/htpasswd.py/download"
 
-NGINX_NAME="nginx-1.7.7"
+# bumped nginx to most recent stable
+NGINX_NAME="nginx-1.10.1"
 NGINX_URL="http://nginx.org/download/$NGINX_NAME.tar.gz"
 
 LIGHTTPD_NAME="lighttpd-1.4.35"
 LIGHTTPD_URL="http://download.lighttpd.net/lighttpd/releases-1.4.x/$LIGHTTPD_NAME.tar.gz"
 
-MOD_SCGI_VERSION="1.14"
+# bumped scgi version
+MOD_SCGI_VERSION="1.15"
 MOD_SCGI_URL="http://python.ca/scgi/releases/scgi-$MOD_SCGI_VERSION.tar.gz"
 
 UNRAR_VERSION="4.0.7"
@@ -138,6 +139,7 @@ IGNORE_IRSSI=n
 # Start port. When we need a new port number, this port is incremented by one.
 CURRENT_PORT=23875
 DEFAULT_PORT_FTP=21
+
 DEFAULT_PORT_FTPES=990
 DEFAULT_UMASK=022
 RPC_PREFIX=RPC

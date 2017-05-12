@@ -1,9 +1,22 @@
-#!/bin/sh
+
+#
+# The Initial Developer of the Original Code is
+
+#
+# Portions created by the Initial Developer are Copyright (C) 2017
+# the Initial Developer. All Rights Reserved.
+#
+# Contributor(s):
+# Andrew Parlane
+# https://github.com/andrewparlane
+# ***** END LICENSE BLOCK *****
+
+#!/bin/bash
 # ***** BEGIN LICENSE BLOCK *****
-# Version: MPL 1.1
+# Version: MPL 2.0
 #
 # The contents of this file are subject to the Mozilla Public License Version
-# 1.1 (the "License"); you may not use this file except in compliance with
+# 2.0 (the "License"); you may not use this file except in compliance with
 # the License. You may obtain a copy of the License at
 # http://www.mozilla.org/MPL/
 #
@@ -20,6 +33,12 @@
 # the Initial Developer. All Rights Reserved.
 #
 # Contributor(s):
+# Etienne Rached
+# https://github.com/etiennerached
+# http://www.tech-and-dev.com/2013/04/installing-rutorrent-on-centos-and-debian.html
+#
+# tillmanj
+# https://github.com/tillmanj
 #
 # 
 # The original script was hosted on http://sourceforge.net/projects/autodl-irssi/files/autodl-setup/download
@@ -111,7 +130,7 @@ HTPASSWD_PY_SCRIPT_URL="http://trac.edgewall.org/export/10433/trunk/contrib/htpa
 HTPASSWD_PY_SCRIPT_URL2="http://sourceforge.net/projects/autodl-irssi/files/inst-files/htpasswd.py/download"
 
 # bumped nginx to most recent stable
-NGINX_NAME="nginx-1.10.1"
+NGINX_NAME="nginx-1.10.3"
 NGINX_URL="http://nginx.org/download/$NGINX_NAME.tar.gz"
 
 LIGHTTPD_NAME="lighttpd-1.4.35"
@@ -4556,7 +4575,7 @@ EOF
 	echo "${CMSG}Unpacking autodl-irssi...$CEND"
 	unzip -o autodl-irssi.zip > /dev/null || errorExit "Could not unpack autodl-irssi zip file"
 	rm -f autodl-irssi.zip
-	cp autodl-irssi.pl autorun/ || errorExit "Could not copy autodl-irssi.pl to Irssi autorun dir."
+	cp autodl-irssi-master/autodl-irssi.pl autorun/ || errorExit "Could not copy autodl-irssi.pl to Irssi autorun dir."
 	mkdir -p "$userDir/.autodl"
 	touch "$userDir/.autodl/autodl.cfg"
 	if ! [ -s "$userDir/.autodl/autodl.cfg" ]; then

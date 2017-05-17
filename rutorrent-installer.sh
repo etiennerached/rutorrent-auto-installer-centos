@@ -1,16 +1,3 @@
-
-#
-# The Initial Developer of the Original Code is
-
-#
-# Portions created by the Initial Developer are Copyright (C) 2017
-# the Initial Developer. All Rights Reserved.
-#
-# Contributor(s):
-# Andrew Parlane
-# https://github.com/andrewparlane
-# ***** END LICENSE BLOCK *****
-
 #!/bin/bash
 # ***** BEGIN LICENSE BLOCK *****
 # Version: MPL 2.0
